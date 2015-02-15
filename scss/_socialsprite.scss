@@ -1,0 +1,60 @@
+/* ============================
+
+	Social Icon Spritesheet 
+
+=============================== */
+
+.social {
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+		background-image: url('../img/social-spritesheet.png');
+		background-image: linear-gradient(transparent, transparent), url('../img/social-spritesheet.svg');
+		display: block;
+		width: 2em;
+		height: 2em;
+		text-indent: 100%;
+		white-space: nowrap;
+  		overflow: hidden;
+	}
+
+	.twitter:hover {
+		background-position: 0 -2em;
+	}
+
+	.facebook {
+		background-position: -2em 0;
+
+		&:hover {
+			background-position: -2em -2em;
+		}
+	}
+
+	.pinterest {
+		background-position: -4em 0;
+
+		&:hover {
+			background-position: -4em -2em;
+		}
+	}
+
+	.instagram {
+		background-position: -6em 0;
+
+		&:hover {
+			background-position: -6em -2em;
+		}
+	}
+
+	.vimeo {
+		background-position: -8em 0;
+
+		&:hover {
+			background-position: -8em -2em;
+		}
+	}
+}
+
