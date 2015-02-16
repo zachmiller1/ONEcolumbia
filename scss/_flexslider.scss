@@ -6,33 +6,34 @@
 	position: relative;
 	background: $white;
 
-	img {
-		max-width: 100%;
-		display: block;
+	li {
+		background: url('../img/burning-columbia-slide.jpg') no-repeat;
+		background-size: cover;
+		padding: 1em;
 	}
 
 	.burning-content {
-		position: absolute;
-		top: 10%;
 		line-height: 1;
 		text-align: center;
 
 		h1 {
-			font-size: 1em;
-			margin-bottom: 0.5em;
+			font-size: 1.5em;
+			margin-bottom: 0.25em;
 		}
 
 		.subtext {
-			font-size: 0.875em;
+			font-size: 1em;
 			font-weight: italic;
 			color: $white;
-		}
+			margin: 0 0 0;
+        }
 
 		p {
 			color: $white;
-			font-size: 0.75em;
+			font-size: 0.875em;
 			line-height: 1;
-			margin: 0 0 0.5em;;
+			margin: 0 0.5em 0.5em;
+			display: inline-block;
 		}
 
 		.italic {
@@ -44,31 +45,28 @@
 			background: $red;
 			height: 2px;
 			border: none;
-			width: 80%;
-		}
-
-		img, .burning-text {
-			float: left;
+			width: 65%;
 		}
 
 		img {
-			width: 50%;
+			width: 70%;
 		}
 
 		.burning-text {
-			width: 50%;
-			margin-top: 20px;
+			width: 100%;
+			margin: 1.25em auto 0;
 		}
 
 		.actions {
-			position: absolute;
-			bottom: -35%;
-			right: 0;
-			width: 100%;
+			margin-top: 1em;
 
 			a {
 				display: inline-block;
-				width: 40%;
+
+				@media screen and (max-width: 449px) {
+					width: 40%;
+				}
+
 				margin-right: 0.5em;
 				&:last-child {
 					margin-right: 0;

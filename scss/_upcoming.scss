@@ -14,3 +14,68 @@
 		width: 90%;
 	}
 }
+
+// Events
+
+.event {
+	background: $cream;
+	text-align: center;
+	margin-top: 2em;
+	position: relative;
+
+	&:last-child {
+		margin-bottom: 2em;
+	}
+
+	.date-bg {
+		display: inline-block;
+		text-align: center;
+		padding: 0.25em 1em;
+		text-transform: uppercase;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.event-text {
+		padding: 1em 1em 0;
+
+	}
+
+	.red:hover {
+		background: lighten($red, 5%);
+	}
+	.orange:hover {
+		background: lighten($lightorange, 5%);
+	}
+	.blue:hover {
+		background: lighten($blue, 5%);
+	}
+
+	img {
+		width: 100%;
+	}
+
+	h4 {
+		clear: both;
+	}
+
+	.read-more {
+		text-transform: uppercase;
+		color: $white;
+		display: block;
+		padding: 0.5em 0;
+	}
+
+	.blue {
+		background: $blue;
+	}
+
+	.orange {
+		background: $lightorange;
+	}
+
+	.red {
+		background: $red;
+	}
+}

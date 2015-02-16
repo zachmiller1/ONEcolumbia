@@ -5,6 +5,7 @@
 
 .categories {
 	padding: 2em 0;
+
 	.container {
 		width: 100%;
 	}
@@ -22,92 +23,37 @@
 		padding: 3em 1em;
 		text-transform: uppercase;
 		font-size: 0.75em;
-		&:hover {
-			background: 
-			linear-gradient(
-		      rgba($grey, 0.8), 
-		      rgba($grey, 0.8)
-		    );
-		}
 	}
 
 	.theatre {
-		background: 
-			linear-gradient(
-		      rgba($red, 0.8), 
-		      rgba($red, 0.8)
-		    ),
-			url('../img/theater.jpg') no-repeat;
-		background-size: cover;
+		@include category-containers($red, $grey, "../img/theater.jpg", 0.8);
 	}
 
 	.dance {
-		background: 
-			linear-gradient(
-		      rgba($pink, 0.8), 
-		      rgba($pink, 0.8)
-		    ),
-			url('../img/ballet.jpg') no-repeat;
-		background-size: cover;
+		@include category-containers($pink, $grey, "../img/ballet.jpg", 0.8);
 	}
 
 	.music {
-		background: 
-			linear-gradient(
-		      rgba($blue, 0.8), 
-		      rgba($blue, 0.8)
-		    ),
-			url('../img/music.jpg') no-repeat;
-		background-size: cover;
+		@include category-containers($blue, $grey, "../img/music.jpg", 0.8);
 	}
 
 	.film {
-		background: 
-			linear-gradient(
-		      rgba($green, 0.8), 
-		      rgba($green, 0.8)
-		    ),
-			url('../img/film.jpg') no-repeat;
-		background-size: cover;
+		@include category-containers($green, $grey, "../img/film.jpg", 0.8);
 	}
 
 	.history {
-		background: 
-			linear-gradient(
-		      rgba($lightorange, 0.8), 
-		      rgba($lightorange, 0.8)
-		    ),
-			url('../img/history.jpg') no-repeat;
-		background-size: cover;
+		@include category-containers($lightorange, $grey, "../img/history.jpg", 0.8);
 	}
 
 	.literature {
-		background: 
-			linear-gradient(
-		      rgba($teal, 0.8), 
-		      rgba($teal, 0.8)
-		    ),
-			url('../img/literature.jpg') no-repeat;
-		background-size: cover;
+		@include category-containers($teal, $grey, "../img/literature.jpg", 0.8);
 	}
 
 	.visual {
-		background: 
-			linear-gradient(
-		      rgba($purple, 0.8), 
-		      rgba($purple, 0.8)
-		    ),
-			url('../img/visual.jpg') no-repeat;
-		background-size: cover;
+		@include category-containers($purple, $grey, "../img/visual.jpg", 0.8);
 	}
 
 	.more {
-		background: 
-			linear-gradient(
-		      rgba($yellow, 0.8), 
-		      rgba($yellow, 0.8)
-		    ),
-			url('../img/more.jpg') no-repeat;
-		background-size: cover;
+		@include category-containers($yellow, $grey, "../img/more.jpg", 0.8);
 	}
 }

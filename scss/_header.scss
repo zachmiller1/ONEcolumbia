@@ -6,6 +6,12 @@
 	background: $lightblue;
 	padding: 0;
 
+	@media screen and (min-width: 550px) {
+		.container {
+			width: 100%;
+		}
+	}
+
 	.social {
 		text-align: center;
 	}
@@ -40,6 +46,12 @@
 .main-header {
 	background: $cream;
 
+	@media screen and (min-width: 550px) {
+		.container {
+			width: 100%;
+		}
+	}
+
 	h1 {
 		margin: 0;
 		text-indent: 100%;
@@ -64,11 +76,18 @@
 
 	.main-nav {
 
+		.menu {
+			@media screen and (min-width: 450px) {
+				font-size: 1.5em;
+			}
+		}
+
+
 		a {
 			display: block;
 			text-align: center;
 			color: $cream;
-			padding: 0.325em 0;
+			padding: 0.5em 0;
 			background: $blue;
 			&:hover {
 				color: $white;

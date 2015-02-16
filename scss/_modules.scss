@@ -6,6 +6,10 @@
 
 .banner {
 	padding: 0.325em 0 0.75em;
+	@media screen and (min-width: 550px) {
+		padding: 0.325em 0;
+	}
+
 	text-align: center;
 	@media screen and (min-width: 550px) {
 		h2 {
@@ -15,6 +19,10 @@
 
 		.all {
 			float: right;
+			margin-top: 5px;
+			@media screen and (min-width: 550px) {
+				margin-top: 0;
+			}
 		}
 	}
 }
@@ -39,6 +47,10 @@
 	padding: 0.5em 0;
 	color: $black;
 	border-bottom: 2px solid darken($grey, 5%);
+	@media screen and (min-width: 450px) {
+		padding: 0.875em 0;
+	}
+
 	&:hover {
 		background: $white;
 		border-bottom: 2px solid lighten($grey, 10%);
@@ -84,17 +96,25 @@
 // Form Inputs
 
 input[type="text"], input[type="email"], input[type="date"], input[type="search"], select { 
+	box-sizing: border-box;
+	background: #fff;
 	text-align: center;
 	width: 90%;
+	height: 40px;
 	border-style: solid; 
 	border-width: 0px; 
 	border-color: #ffffff; 
 	color: #aaaaaa; 
 	box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,.49); 
 	text-shadow: 0px 0px 0px rgba(42,42,42,.49); 
+	
+	-webkit-appearance: none;
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px;
 	border-radius: 3px; 
-	font-size: 14px; 
-	padding: 10px;  
+	
+	font-size: 14px;   
+	
 	&:focus { 
 		outline: none; 
 	}
@@ -105,67 +125,6 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
 
 
 
-// Events
-
-.event {
-	background: $cream;
-	text-align: center;
-	margin-top: 2em;
-	position: relative;
-	&:hover {
-		background: $blue;
-		color: $white;
-
-		h4, .read-more {
-			color: $white;
-		}
-	}
-
-	&:last-child {
-		margin-bottom: 2em;
-	}
-
-	.date-bg {
-		display: inline-block;
-		text-align: center;
-		padding: 0.25em 1em;
-		text-transform: uppercase;
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-
-	.event-text {
-		padding: 1em;
-
-		a {
-			text-transform: uppercase;
-			color: $black;
-		}
-	}
-
-	img {
-		width: 100%;
-	}
-
-	h4 {
-		clear: both;
-	}
-
-	.blue {
-		background: $blue;
-	}
-
-	.orange {
-		background: $lightorange;
-	}
-
-	.red {
-		background: $red;
-	}
-}
-
-
 
 // Container 
 
@@ -173,9 +132,7 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
 	width: 100%;
 
 	@media screen and (min-width: 550px) {
-		body .container {
-			width: 90%;
-		}
+		width: 90%;
 	}
 }
 

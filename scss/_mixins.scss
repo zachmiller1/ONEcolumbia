@@ -1,0 +1,23 @@
+// ========================
+// 		Modules
+// ========================
+
+@mixin category-containers($color, $hover, $url, $opacity) {
+	background:
+		linear-gradient(
+	      rgba($color, $opacity), 
+	      rgba($color, $opacity)
+	    ),
+	    url( $url ) no-repeat;
+	background-size: cover;
+
+	&:hover {
+		background: 
+			linear-gradient(
+		      rgba($hover, $opacity), 
+		      rgba($hover, $opacity)
+		    ),
+			url( $url ) no-repeat;
+		background-size: cover;
+	}
+}
