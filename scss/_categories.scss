@@ -1,0 +1,113 @@
+// ==============================
+// 		Event Categories
+// ==============================
+
+
+.categories {
+	padding: 2em 0;
+	.container {
+		width: 100%;
+	}
+
+	@media screen and (min-width: 550px) {
+		.container {
+			width: 90%;
+		}
+	}
+
+	.category {
+		width: 50%;
+		float: left;
+		text-align: center;
+		padding: 3em 1em;
+		text-transform: uppercase;
+		font-size: 0.75em;
+		&:hover {
+			background: 
+			linear-gradient(
+		      rgba($grey, 0.8), 
+		      rgba($grey, 0.8)
+		    );
+		}
+	}
+
+	.theatre {
+		background: 
+			linear-gradient(
+		      rgba($red, 0.8), 
+		      rgba($red, 0.8)
+		    ),
+			url('../img/theater.jpg') no-repeat;
+		background-size: cover;
+	}
+
+	.dance {
+		background: 
+			linear-gradient(
+		      rgba($pink, 0.8), 
+		      rgba($pink, 0.8)
+		    ),
+			url('../img/ballet.jpg') no-repeat;
+		background-size: cover;
+	}
+
+	.music {
+		background: 
+			linear-gradient(
+		      rgba($blue, 0.8), 
+		      rgba($blue, 0.8)
+		    ),
+			url('../img/music.jpg') no-repeat;
+		background-size: cover;
+	}
+
+	.film {
+		background: 
+			linear-gradient(
+		      rgba($green, 0.8), 
+		      rgba($green, 0.8)
+		    ),
+			url('../img/film.jpg') no-repeat;
+		background-size: cover;
+	}
+
+	.history {
+		background: 
+			linear-gradient(
+		      rgba($lightorange, 0.8), 
+		      rgba($lightorange, 0.8)
+		    ),
+			url('../img/history.jpg') no-repeat;
+		background-size: cover;
+	}
+
+	.literature {
+		background: 
+			linear-gradient(
+		      rgba($teal, 0.8), 
+		      rgba($teal, 0.8)
+		    ),
+			url('../img/literature.jpg') no-repeat;
+		background-size: cover;
+	}
+
+	.visual {
+		background: 
+			linear-gradient(
+		      rgba($purple, 0.8), 
+		      rgba($purple, 0.8)
+		    ),
+			url('../img/visual.jpg') no-repeat;
+		background-size: cover;
+	}
+
+	.more {
+		background: 
+			linear-gradient(
+		      rgba($yellow, 0.8), 
+		      rgba($yellow, 0.8)
+		    ),
+			url('../img/more.jpg') no-repeat;
+		background-size: cover;
+	}
+}

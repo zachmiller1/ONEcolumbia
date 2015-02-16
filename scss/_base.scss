@@ -1,0 +1,65 @@
+// ========================
+// 		Base Styles
+// ========================
+
+body {
+	font-size: 1em;
+	font-family: $body-font;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $main-font;
+	color: $white;
+	font-weight: $bold;
+	margin: 0;
+}
+
+h1 {
+	font-size: 2.125em;
+}
+
+h2 {
+	font-size: 1.75em;
+	margin-bottom: 0.5em;
+}
+
+h3, h4 {
+	font-size: 1.125em;
+}
+
+h4 {
+	color: $black;
+}
+
+h5 {
+	font-size: 1.875em;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+	-webkit-text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+	-moz-text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+	-o-text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+input {
+	font-size: 0.875em;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+

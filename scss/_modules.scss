@@ -1,0 +1,189 @@
+// ========================
+// 		Modules
+// ========================
+
+// Banners
+
+.banner {
+	padding: 0.325em 0 0.75em;
+	text-align: center;
+	@media screen and (min-width: 550px) {
+		h2 {
+			float: left;
+			margin-bottom: 0;
+		}
+
+		.all {
+			float: right;
+		}
+	}
+}
+
+.categories-title {
+	background: $blue;
+}
+
+
+
+// Buttons
+
+.button, .signup {
+	font-size: 0.875em;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	background: $cream;
+	width: 140px;
+	border: none;
+	border-radius: 3px;
+	padding: 0.5em 0;
+	color: $black;
+	border-bottom: 2px solid darken($grey, 5%);
+	&:hover {
+		background: $white;
+		border-bottom: 2px solid lighten($grey, 10%);
+	}
+}
+
+.find {
+	color: $white;
+	background: $purple;
+	border: none;
+	border-bottom: 2px solid darken($purple, 20%);
+	&:hover {
+		background: darken($purple, 10%);
+		border-bottom: 2px solid darken( $purple, 30%);
+	}
+}
+
+.secondary {
+	color: $white;
+	background: $grey;
+	border: none;
+	border-bottom: 2px solid darken($grey, 10%);
+	&:hover {
+		background: darken($grey, 10%);
+		border-bottom: 2px solid darken($grey, 20%);
+	}
+}
+
+.buy {
+	color: $white;
+	background: $orange;
+	border: none;
+	border-bottom: 2px solid darken($orange, 10%);
+	&:hover {
+		background: darken($orange, 10%);
+		border-bottom: 2px solid darken( $orange, 10%);
+	}
+}
+
+
+
+
+// Form Inputs
+
+input[type="text"], input[type="email"], input[type="date"], input[type="search"], select { 
+	text-align: center;
+	width: 90%;
+	border-style: solid; 
+	border-width: 0px; 
+	border-color: #ffffff; 
+	color: #aaaaaa; 
+	box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,.49); 
+	text-shadow: 0px 0px 0px rgba(42,42,42,.49); 
+	border-radius: 3px; 
+	font-size: 14px; 
+	padding: 10px;  
+	&:focus { 
+		outline: none; 
+	}
+} 
+
+
+
+
+
+
+// Events
+
+.event {
+	background: $cream;
+	text-align: center;
+	margin-top: 2em;
+	position: relative;
+	&:hover {
+		background: $blue;
+		color: $white;
+
+		h4, .read-more {
+			color: $white;
+		}
+	}
+
+	&:last-child {
+		margin-bottom: 2em;
+	}
+
+	.date-bg {
+		display: inline-block;
+		text-align: center;
+		padding: 0.25em 1em;
+		text-transform: uppercase;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.event-text {
+		padding: 1em;
+
+		a {
+			text-transform: uppercase;
+			color: $black;
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+
+	h4 {
+		clear: both;
+	}
+
+	.blue {
+		background: $blue;
+	}
+
+	.orange {
+		background: $lightorange;
+	}
+
+	.red {
+		background: $red;
+	}
+}
+
+
+
+// Container 
+
+.container {
+	width: 100%;
+
+	@media screen and (min-width: 550px) {
+		body .container {
+			width: 90%;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

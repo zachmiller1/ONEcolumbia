@@ -1,0 +1,57 @@
+// ========================
+// 		Footer
+// ========================
+
+.main-footer {
+	background: $darkblue;
+	padding: 1em 0;
+
+	.container {
+		width: 90%;
+	}
+
+	.footer-nav {
+		text-align: center;
+		margin-bottom: 50px;
+		@media screen and (min-width: 450px) {
+			float: left;
+			width: 50%;
+		}
+
+		p {
+			color: $white;
+			font-weight: $bold;
+			text-transform: uppercase;
+			font-family: $main-font;
+		}
+
+		a {
+			color: $cream;
+			font-size: 0.75em;
+			text-transform: uppercase;
+			line-height: 2;
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+
+}
+
+.footer-bottom {
+	background: $midnightblue;
+	text-align: center;
+	padding: 1em 0;
+
+	.social {
+		padding: 0;
+	}
+
+	p {
+		color: $white;
+		font-size: 0.75em;
+		margin: 0;
+		padding-bottom: 1.5em;
+	}
+
+}

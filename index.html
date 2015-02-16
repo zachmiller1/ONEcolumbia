@@ -32,7 +32,7 @@
 
         <!-- ==== Top Bar ==== --> 
 
-        <div class="top-bar">
+        <div class="top-bar clearfix">
             <div class="container">
 
                 <ul class="social">
@@ -43,9 +43,9 @@
                     <li><a href="http://www.vimeo.com/onecolumbia" class="vimeo">Vimeo</a></li>
                 </ul><!-- end social -->
 
-                <ul class="accounts">
-                    <li><a href="">Login</a></li>
-                    <li><a href="">Create an Account</a></li>
+                <ul class="accounts clearfix">
+                    <li><a href="" class="login">Login</a></li>
+                    <li><a href="" class="create">Create an Account</a></li>
                 </ul><!-- end accounts -->
 
             </div><!-- end container -->
@@ -59,15 +59,23 @@
         <header class="main-header">
             <div class="container">
 
-                <h1><a href="" class="logo-replace"></a></h1>
+                <h1>
+                    <a href="" class="logo-replace">One Columbia Arts AND History</a>
+                </h1>
 
-                <ul class="main-nav">
-                    <li><a href="">Events</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Community</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Connect</a></li>
-                </ul><!-- end main-nav -->
+                <nav class="main-nav">
+                    <ul class="mobile-nav">
+                        <li><a href="">Menu</a>
+                            <ul class="regular-nav">
+                                <li><a href="">Events</a></li>
+                                <li><a href="">News</a></li>
+                                <li><a href="">Community</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Connect</a></li>
+                            </ul><!-- end regular-nav -->
+                        </li>
+                    </ul><!-- end mobile-nav -->
+                </nav><!-- end main-nav -->
 
             </div><!-- end container -->
         </header><!-- end main-header --> 
@@ -78,25 +86,27 @@
 
         <!-- ==== Hero Featured Slider ==== -->
 
-        <div class="flexslider">
+        <div class="flexslider clearfix">
             <ul class="slides">
 
                 <li class="burning-columbia">        
-                  <img src="" />
+                  <img src="img/burning-columbia-slide.jpg" alt="">
 
                   <div class="burning-content">
 
-                      <img src="" alt="">
+                      <img src="img/boc_logo_color.png" alt="">
 
                       <div class="burning-text">
                           <h1>The 150th Anniversary</h1>
                           <p class="subtext">of the burning of Columbia</p>
                           <hr>
                           <p>February 17, 2015</p>
-                          <p><span class="italic">6:30</span></p>
+                          <p><span class="italic">6:30 P.M.</span></p>
 
-                          <a href="" class="button secondary">Learn More</a>
-                          <a href="" class="button buy">Buy Tickets</a>
+                          <div class="actions">
+                              <a href="" class="button secondary">Learn More</a>
+                              <a href="" class="button buy">Buy Tickets</a>
+                          </div><!-- end actions -->
                       </div><!-- end burning-text -->
 
                   </div><!-- end burning-content -->
@@ -113,7 +123,7 @@
         <!-- ==== Find Event ==== -->
 
         <aside class="banner find-event">
-            <div class="container">
+            <div class="container clearfix">
 
                 <form action="" class="event-form">
                 
@@ -157,8 +167,8 @@
 
         <!-- ==== Upcoming Title ==== -->
 
-        <div class="banner upcoming-title">
-            <div class="container">
+        <div class="banner upcoming-title clearfix">
+            <div class="container clearfix">
 
                 <h2>Upcoming Events</h2>
 
@@ -173,36 +183,42 @@
         <!-- ==== Upcoming Events ==== -->
 
         <section class="upcoming">
-            <div class="container">
+            <div class="container clearfix">
                 
                 <div class="event">
-                    <div class="date-bg">
-                        <p>Feb. 12</p>
+                    <div class="date-bg red">
+                        <h3>Feb. 12</h3>
                     </div>
-                    <img src="" alt="">
-                    <h4>Crafting Civil (War) Conversations</h4>
-                    <p>McKissick Museum will open its juried contemporary craft exhibition with a performance by Wideman/Davis Dance, whose co-artistic directors Tanya Wideman-Davis and Thaddeus Davis are engaging.</p>
-                    <a href="" class="read-more">Read More</a>
+                    <img src="img/exhibition.jpg" alt="">
+                    <div class="event-text">
+                        <h4>Crafting Civil (War) Conversations</h4>
+                        <p>McKissick Museum will open its juried contemporary craft exhibition with a performance by Wideman/Davis Dance, whose co-artistic directors Tanya Wideman-Davis and Thaddeus Davis are engaging.</p>
+                        <a href="" class="read-more">Read More</a>
+                    </div><!-- end event-text -->
                 </div><!-- end event -->
 
                 <div class="event">
-                    <div class="date-bg">
-                        <p>Feb. 14</p>
+                    <div class="date-bg orange">
+                        <h3>Feb. 14</h3>
                     </div>
-                    <img src="" alt="">
-                    <h4>History Day</h4>
-                    <p>The South Carolina State Museum and the South Carolina Relic Room and Military Museum are partnering to commemorate the 150th anniversary of Sherman’s march across the state during the State Museum’s.</p>
-                    <a href="" class="read-more">Read More</a>
+                    <img src="img/theaterplay.jpg" alt="">
+                    <div class="event-text">
+                        <h4>History Day</h4>
+                        <p>The South Carolina State Museum and the South Carolina Relic Room and Military Museum are partnering to commemorate the 150th anniversary of Sherman’s march across the state during the State Museum’s.</p>
+                        <a href="" class="read-more">Read More</a>
+                    </div><!-- end event-text -->
                 </div><!-- end event -->
 
-                <div class="event">
-                    <div class="date-bg">
-                        <p>Feb. 14</p>
+                <div class="event clearfix">
+                    <div class="date-bg blue">
+                        <h3>Feb. 14</h3>
                     </div>
-                    <img src="" alt="">
-                    <h4>Guitar Gala 2015</h4>
-                    <p>This exciting evening will feature classical, jazz, and Latin-American guitar music performed live by some of South Carolina’s best musicians. In addition to the music, patrons will be offered elegant.</p>
-                    <a href="" class="read-more">Read More</a>
+                    <img src="img/latinguitar.jpg" alt="">
+                    <div class="event-text">
+                        <h4>Guitar Gala 2015</h4>
+                        <p>This exciting evening will feature classical, jazz, and Latin-American guitar music performed live by some of South Carolina’s best musicians. In addition to the music, patrons will be offered elegant.</p>
+                        <a href="" class="read-more">Read More</a>
+                    </div><!-- end event-text -->
                 </div><!-- end event -->
 
             </div><!-- end container -->
@@ -213,7 +229,7 @@
 
         <!-- ==== Categories Title ==== -->
 
-        <div class="banner categories-title">
+        <div class="banner categories-title clearfix">
             <div class="container">
 
                 <h2>Event Categories</h2>
@@ -227,40 +243,40 @@
 
         <!-- ==== Event Categories ==== -->
 
-        <section class="categories">
+        <section class="categories clearfix">
             <div class="container">
 
-                <div class="category">
+                <a href="" class="category theatre">
                     <h5>Theatre</h5>
-                </div><!-- end category -->
+                </a><!-- end category -->
 
-                <div class="category">
+                <a href="" class="category dance">
                     <h5>Dance</h5>
-                </div><!-- end category -->
+                </a><!-- end category -->
 
-                <div class="category">
+                <a href="" class="category music">
                     <h5>Music</h5>
-                </div><!-- end category -->
+                </a><!-- end category -->
 
-                <div class="category">
+                <a href="" class="category film">
                     <h5>Film</h5>
-                </div><!-- end category -->
+                </a><!-- end category -->
 
-                <div class="category">
+                <a href="" class="category history">
                     <h5>History</h5>
-                </div><!-- end category -->
+                </a><!-- end category -->
 
-                <div class="category">
+                <a href="" class="category literature">
                     <h5>Literature</h5>
-                </div><!-- end category -->
+                </a><!-- end category -->
 
-                <div class="category">
+                <a href="" class="category visual">
                     <h5>Visual Arts</h5>
-                </div><!-- end category -->
+                </a><!-- end category -->
 
-                <div class="category">
+                <a href="" class="category more">
                     <h5>More</h5>
-                </div><!-- end category -->
+                </a><!-- end category -->
 
             </div><!-- end container -->
         </section><!-- end categories -->
@@ -277,7 +293,7 @@
                 <p>Never miss an event again</p>
 
                 <form action="" class="newsletter-form">
-                    <input type="email">
+                    <input type="email" placeholder="Enter your email here!">
                     <input type="submit" value="Sign Up" class="button signup">
                 </form><!-- end newsletter-form -->
 
@@ -289,8 +305,8 @@
 
         <!-- ==== Main Footer ==== -->
 
-        <footer class="main-footer">
-            <div class="container">
+        <footer class="main-footer clearfix">
+            <div class="container clearfix">
 
                 <ul class="footer-nav">
                     <li><p>Directories</p></li>
@@ -342,7 +358,7 @@
         <div class="footer-bottom">
             <div class="container">
 
-                <p>© 2014 One Columbia for Arts and History, Inc.</p>
+                <p>© 2015 One Columbia for Arts and History, Inc.</p>
 
                 <ul class="social">
                     <li><a href="http://www.facebook.com/onecolumbia" class="facebook">Facebook</a></li>

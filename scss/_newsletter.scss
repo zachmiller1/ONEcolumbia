@@ -1,0 +1,21 @@
+// ========================
+// 		Newsletter Styles
+// ========================
+
+.newsletter {
+	background: $teal;
+	text-align: center;
+	padding: 1em 0;
+
+	input {
+		margin-bottom: 0.5em;
+	}
+
+	p {
+		margin: 0 0 1em;
+		color: $white;
+		font-family: $main-font;
+		text-transform: uppercase;
+		font-size: 1.375em;
+	}
+}

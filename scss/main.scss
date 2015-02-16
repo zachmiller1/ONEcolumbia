@@ -7,7 +7,19 @@
 
 // Global Styles
 @import 'globals';
+@import 'base';
 
+// Modules
+@import 'modules';
+
+// Layout
+@import 'header';
+@import 'flexslider';
+@import 'findevent';
+@import 'upcoming';
+@import 'categories';
+@import 'newsletter';
+@import 'footer';
 
 // Page Specific
 @import 'pages/events';

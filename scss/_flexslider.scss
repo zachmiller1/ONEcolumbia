@@ -1,0 +1,80 @@
+// ========================
+// 		Flex Slider
+// ========================
+
+.flexslider {
+	position: relative;
+	background: $white;
+
+	img {
+		max-width: 100%;
+		display: block;
+	}
+
+	.burning-content {
+		position: absolute;
+		top: 10%;
+		line-height: 1;
+		text-align: center;
+
+		h1 {
+			font-size: 1em;
+			margin-bottom: 0.5em;
+		}
+
+		.subtext {
+			font-size: 0.875em;
+			font-weight: italic;
+			color: $white;
+		}
+
+		p {
+			color: $white;
+			font-size: 0.75em;
+			line-height: 1;
+			margin: 0 0 0.5em;;
+		}
+
+		.italic {
+			font-weight: italic;
+		}
+
+		hr {
+			color: $red;
+			background: $red;
+			height: 2px;
+			border: none;
+			width: 80%;
+		}
+
+		img, .burning-text {
+			float: left;
+		}
+
+		img {
+			width: 50%;
+		}
+
+		.burning-text {
+			width: 50%;
+			margin-top: 20px;
+		}
+
+		.actions {
+			position: absolute;
+			bottom: -35%;
+			right: 0;
+			width: 100%;
+
+			a {
+				display: inline-block;
+				width: 40%;
+				margin-right: 0.5em;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
