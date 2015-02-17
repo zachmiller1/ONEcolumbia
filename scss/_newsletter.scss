@@ -7,9 +7,44 @@
 	text-align: center;
 	padding: 1em 0;
 
+	form {
+		@media screen and (min-width: 1024px) {
+			width: 60%;
+			float: right;
+		}
+	}
+
+	.small-container {
+		@media screen and (min-width: 700px) {
+			width: 70%;
+			margin: 0 auto;
+		}
+		@media screen and (min-width: 1024px) {
+			width: 80%;
+		}
+	}
+
 	input {
 		margin-bottom: 0.5em;
 		margin-top: 0.5em;
+		@media screen and (min-width: 700px) {
+			float: left;
+			width: 65%;
+		}
+	}
+
+	input[type="text"] {
+		@media screen and (min-width: 1024px) {
+			float: initial;
+			width: 65%;
+		}
+	}
+
+	input[type="submit"] {
+		@media screen and (min-width: 700px) {
+			float: right;
+			width: 140px;
+		}
 	}
 
 	p {
@@ -18,5 +53,9 @@
 		font-family: $main-font;
 		text-transform: uppercase;
 		font-size: 1.5em;
+		@media screen and (min-width: 1024px) {
+			margin: 0.4em 0 0.5em;
+			float: left;
+		}
 	}
 }

@@ -459,12 +459,17 @@ input {
   width: 90%;
   margin: 0 auto; }
 
+@media screen and (min-width: 1024px) {
+  .container, .small-container, .burning-container {
+    max-width: 960px;
+    margin: 0 auto; } }
+
 .banner {
   padding: 0.325em 0 0.75em;
   text-align: center; }
   @media screen and (min-width: 550px) {
     .banner {
-      padding: 0.325em 0; } }
+      padding: 1em 0; } }
   @media screen and (min-width: 550px) {
     .banner h2 {
       float: left;
@@ -515,6 +520,9 @@ input {
   .secondary:hover {
     background: #909090;
     border-bottom: 2px solid #777777; }
+  @media screen and (min-width: 550px) {
+    .secondary {
+      width: 47%; } }
 
 .buy {
   color: #fff;
@@ -524,6 +532,9 @@ input {
   .buy:hover {
     background: #e18a0e;
     border-bottom: 2px solid #e18a0e; }
+  @media screen and (min-width: 550px) {
+    .buy {
+      width: 47%; } }
 
 input[type="text"], input[type="email"], input[type="date"], input[type="search"], select {
   box-sizing: border-box;
@@ -582,13 +593,9 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
   @media screen and (min-width: 550px) {
     .main-header .container {
       width: 100%; } }
-  .main-header h1 {
-    margin: 0;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden; }
   .main-header .logo-replace {
     display: block;
+    text-indent: -9999px;
     margin: 0 auto;
     background: url("../img/one-columbia-logo.png") no-repeat;
     background-size: contain;
@@ -603,6 +610,9 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
   @media screen and (min-width: 450px) {
     .main-header .main-nav .menu {
       font-size: 1.5em; } }
+  @media screen and (min-width: 1024px) {
+    .main-header .main-nav .menu {
+      display: none; } }
   .main-header .main-nav a {
     display: block;
     text-align: center;
@@ -614,6 +624,13 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
       background: #34495e; }
   .main-header .main-nav .regular-nav {
     display: none; }
+    @media screen and (min-width: 1024px) {
+      .main-header .main-nav .regular-nav {
+        display: block; }
+        .main-header .main-nav .regular-nav li {
+          display: inline; }
+        .main-header .main-nav .regular-nav a {
+          display: inline-block; } }
 
 .flexslider {
   position: relative;
@@ -622,23 +639,39 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
     background: url("../img/burning-columbia-slide.jpg") no-repeat;
     background-size: cover;
     padding: 1em; }
+    @media screen and (min-width: 700px) {
+      .flexslider li {
+        padding: 1em 1.5em; } }
   .flexslider .burning-content {
     line-height: 1;
     text-align: center; }
+    @media screen and (min-width: 700px) {
+      .flexslider .burning-content {
+        width: 90%;
+        margin: 0 auto; } }
     .flexslider .burning-content h1 {
       font-size: 1.5em;
       margin-bottom: 0.25em; }
+      @media screen and (min-width: 700px) {
+        .flexslider .burning-content h1 {
+          font-size: 2em; } }
     .flexslider .burning-content .subtext {
       font-size: 1em;
       font-weight: italic;
       color: #fff;
       margin: 0 0 0; }
+      @media screen and (min-width: 700px) {
+        .flexslider .burning-content .subtext {
+          font-size: 1.325em; } }
     .flexslider .burning-content p {
       color: #fff;
       font-size: 0.875em;
       line-height: 1;
       margin: 0 0.5em 0.5em;
       display: inline-block; }
+      @media screen and (min-width: 700px) {
+        .flexslider .burning-content p {
+          font-size: 1em; } }
     .flexslider .burning-content .italic {
       font-weight: italic; }
     .flexslider .burning-content hr {
@@ -647,11 +680,26 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
       height: 2px;
       border: none;
       width: 65%; }
+      @media screen and (min-width: 700px) {
+        .flexslider .burning-content hr {
+          margin: 0.625em auto; } }
     .flexslider .burning-content img {
       width: 70%; }
+      @media screen and (min-width: 550px) {
+        .flexslider .burning-content img {
+          width: 40%;
+          float: left; } }
+      @media screen and (min-width: 700px) {
+        .flexslider .burning-content img {
+          width: 45%; } }
     .flexslider .burning-content .burning-text {
       width: 100%;
       margin: 1.25em auto 0; }
+      @media screen and (min-width: 550px) {
+        .flexslider .burning-content .burning-text {
+          width: 50%;
+          float: right;
+          margin-top: 3em; } }
     .flexslider .burning-content .actions {
       margin-top: 1em; }
       .flexslider .burning-content .actions a {
@@ -684,6 +732,20 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
   text-align: center;
   margin-top: 2em;
   position: relative; }
+  @media screen and (min-width: 768px) {
+    .event {
+      float: left;
+      width: 47.6%;
+      margin-right: 2em; }
+      .event:nth-child(2) {
+        margin-right: 0; } }
+  @media screen and (min-width: 550px) {
+    .event {
+      width: 30.9%; }
+      .event:nth-child(2) {
+        margin-right: 2em; }
+      .event:last-child {
+        margin-right: 0; } }
   .event:last-child {
     margin-bottom: 2em; }
   .event .date-bg {
@@ -711,6 +773,9 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
     color: #fff;
     display: block;
     padding: 0.5em 0; }
+    @media screen and (min-width: 550px) {
+      .event .read-more {
+        padding: 1em 0; } }
   .event .blue {
     background: #2980b9; }
   .event .orange {
@@ -732,6 +797,10 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
     padding: 3em 1em;
     text-transform: uppercase;
     font-size: 0.75em; }
+    @media screen and (min-width: 1024px) {
+      .categories .category {
+        width: 25%;
+        padding: 4em 1em; } }
   .categories .theatre {
     background: linear-gradient(rgba(231, 76, 60, 0.8), rgba(231, 76, 60, 0.8)), url("../img/theater.jpg") no-repeat;
     background-size: cover; }
@@ -785,15 +854,42 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
   background: #1abc9c;
   text-align: center;
   padding: 1em 0; }
+  @media screen and (min-width: 1024px) {
+    .newsletter form {
+      width: 60%;
+      float: right; } }
+  @media screen and (min-width: 700px) {
+    .newsletter .small-container {
+      width: 70%;
+      margin: 0 auto; } }
+  @media screen and (min-width: 1024px) {
+    .newsletter .small-container {
+      width: 80%; } }
   .newsletter input {
     margin-bottom: 0.5em;
     margin-top: 0.5em; }
+    @media screen and (min-width: 700px) {
+      .newsletter input {
+        float: left;
+        width: 65%; } }
+  @media screen and (min-width: 1024px) {
+    .newsletter input[type="text"] {
+      float: initial;
+      width: 65%; } }
+  @media screen and (min-width: 700px) {
+    .newsletter input[type="submit"] {
+      float: right;
+      width: 140px; } }
   .newsletter p {
     margin: 0 0 0.25em;
     color: #fff;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     font-size: 1.5em; }
+    @media screen and (min-width: 1024px) {
+      .newsletter p {
+        margin: 0.4em 0 0.5em;
+        float: left; } }
 
 .main-footer {
   background: #34495e;
@@ -810,11 +906,27 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
         vertical-align: top; }
         .main-footer .footer-nav:last-child {
           width: 100%; } }
+    @media screen and (min-width: 700px) {
+      .main-footer .footer-nav {
+        width: 33%; }
+        .main-footer .footer-nav:last-child {
+          width: 33%; } }
+    @media screen and (min-width: 1024px) {
+      .main-footer .footer-nav {
+        width: 19.7%; }
+        .main-footer .footer-nav:last-child {
+          width: 19.8%; } }
     .main-footer .footer-nav p {
       color: #fff;
       font-weight: 700;
       text-transform: uppercase;
       font-family: "Oswald", sans-serif; }
+      @media screen and (min-width: 1024px) {
+        .main-footer .footer-nav p {
+          margin-bottom: 0.5em; } }
+    @media screen and (min-width: 1024px) {
+      .main-footer .footer-nav li {
+        line-height: 2; } }
     .main-footer .footer-nav a {
       color: #ecf0f1;
       font-size: 0.75em;
@@ -829,10 +941,17 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
   padding: 1em 0; }
   .footer-bottom .social {
     padding: 0; }
+    @media screen and (min-width: 1024px) {
+      .footer-bottom .social {
+        float: right; } }
   .footer-bottom p {
     color: #fff;
     font-size: 0.75em;
     margin: 0;
     padding-bottom: 1.5em; }
+    @media screen and (min-width: 1024px) {
+      .footer-bottom p {
+        float: left;
+        padding: 0.9em; } }
 
 /*# sourceMappingURL=main.css.map */

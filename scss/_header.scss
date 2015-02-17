@@ -52,15 +52,16 @@
 		}
 	}
 
-	h1 {
-		margin: 0;
-		text-indent: 100%;
-		white-space: nowrap;
-		overflow: hidden;
-	}
+	// h1 {
+	// 	margin: 0;
+	// 	text-indent: 100%;
+	// 	white-space: nowrap;
+	// 	overflow: hidden;
+	// }
 
 	.logo-replace {
 		display: block;
+		text-indent: -9999px;
 		margin: 0 auto;
 		background: url('../img/one-columbia-logo.png') no-repeat;
 		background-size: contain;
@@ -80,6 +81,9 @@
 			@media screen and (min-width: 450px) {
 				font-size: 1.5em;
 			}
+			@media screen and (min-width: 1024px) {
+				display: none;
+			}
 		}
 
 
@@ -97,6 +101,17 @@
 
 		.regular-nav {
 			display: none;
+			@media screen and (min-width: 1024px) {
+				display: block;
+
+				li {
+					display: inline;
+				}
+
+				a {
+					display: inline-block;
+				}
+			}
 		}
 	}
 }

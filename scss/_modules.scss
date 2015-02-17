@@ -2,12 +2,20 @@
 // 		Modules
 // ========================
 
+// Max-width Container {
+.container, .small-container, .burning-container {
+	@media screen and (min-width: 1024px) {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+}
+
 // Banners
 
 .banner {
 	padding: 0.325em 0 0.75em;
 	@media screen and (min-width: 550px) {
-		padding: 0.325em 0;
+		padding: 1em 0;
 	}
 
 	text-align: center;
@@ -77,6 +85,9 @@
 		background: darken($grey, 10%);
 		border-bottom: 2px solid darken($grey, 20%);
 	}
+	@media screen and (min-width: 550px) {
+		width: 47%;
+	}
 }
 
 .buy {
@@ -87,6 +98,9 @@
 	&:hover {
 		background: darken($orange, 10%);
 		border-bottom: 2px solid darken( $orange, 10%);
+	}
+	@media screen and (min-width: 550px) {
+		width: 47%;
 	}
 }
 
