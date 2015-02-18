@@ -14,6 +14,9 @@
 
 	.social {
 		text-align: center;
+		@media screen and (min-width: 1024px) {
+			float: left;
+		}
 	}
 
 	.accounts {
@@ -40,8 +43,32 @@
 				background: $darkblue;
 			}
 		}
+
+		@media screen and (min-width: 1024px) {
+			float: right;
+			background: $lightblue;
+			display: block;
+
+			li {
+				display: inline;
+			}
+
+			a {
+				display: inline-block;
+				padding: 0 0 0 20px;
+				text-align: right;
+			}
+		}
 	}
 }
+
+
+
+
+
+
+
+
 
 .main-header {
 	background: $cream;
@@ -49,6 +76,12 @@
 	@media screen and (min-width: 550px) {
 		.container {
 			width: 100%;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		.container {
+			max-width: 960px;
 		}
 	}
 
@@ -72,6 +105,9 @@
 		@media screen and (min-width: 550px) {
 			height: 150px;
 			width: 240px;
+		}
+		@media screen and (min-width: 1024px) {
+			float: left;
 		}
 	}
 
@@ -103,6 +139,8 @@
 			display: none;
 			@media screen and (min-width: 1024px) {
 				display: block;
+				float: right;
+				margin-top: 75px;
 
 				li {
 					display: inline;
@@ -110,6 +148,12 @@
 
 				a {
 					display: inline-block;
+					background: $cream;
+					color: $black;
+					padding-left: 25px;
+					&:hover {
+						color: $grey;
+					}
 				}
 			}
 		}

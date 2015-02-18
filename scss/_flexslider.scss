@@ -87,6 +87,31 @@
 				float: right;
 				margin-top: 3em;
 			}
+
+			@media screen and (min-width: 1024px) {
+				margin-top: 5em;
+
+				h1 {
+					font-size: 2.5em;
+				}
+
+				.subtext {
+					font-size: 1.75em;
+				}
+
+				hr {
+					margin: 1em auto;
+					height: 4px;
+				}
+
+				p {
+					font-size: 1.2em;
+				}
+
+				.button {
+					width: 40%;
+				}
+			}
 		}
 
 		.actions {

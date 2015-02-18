@@ -570,6 +570,9 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
       width: 100%; } }
   .top-bar .social {
     text-align: center; }
+    @media screen and (min-width: 1024px) {
+      .top-bar .social {
+        float: left; } }
   .top-bar .accounts {
     font-family: "Oswald", sans-serif;
     background: #2980b9; }
@@ -587,12 +590,26 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
       .top-bar .accounts a:hover {
         color: #fff;
         background: #34495e; }
+    @media screen and (min-width: 1024px) {
+      .top-bar .accounts {
+        float: right;
+        background: #3498db;
+        display: block; }
+        .top-bar .accounts li {
+          display: inline; }
+        .top-bar .accounts a {
+          display: inline-block;
+          padding: 0 0 0 20px;
+          text-align: right; } }
 
 .main-header {
   background: #ecf0f1; }
   @media screen and (min-width: 550px) {
     .main-header .container {
       width: 100%; } }
+  @media screen and (min-width: 1024px) {
+    .main-header .container {
+      max-width: 960px; } }
   .main-header .logo-replace {
     display: block;
     text-indent: -9999px;
@@ -607,6 +624,9 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
       .main-header .logo-replace {
         height: 150px;
         width: 240px; } }
+    @media screen and (min-width: 1024px) {
+      .main-header .logo-replace {
+        float: left; } }
   @media screen and (min-width: 450px) {
     .main-header .main-nav .menu {
       font-size: 1.5em; } }
@@ -626,11 +646,18 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
     display: none; }
     @media screen and (min-width: 1024px) {
       .main-header .main-nav .regular-nav {
-        display: block; }
+        display: block;
+        float: right;
+        margin-top: 75px; }
         .main-header .main-nav .regular-nav li {
           display: inline; }
         .main-header .main-nav .regular-nav a {
-          display: inline-block; } }
+          display: inline-block;
+          background: #ecf0f1;
+          color: #222;
+          padding-left: 25px; }
+          .main-header .main-nav .regular-nav a:hover {
+            color: #aaa; } }
 
 .flexslider {
   position: relative;
@@ -700,6 +727,20 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
           width: 50%;
           float: right;
           margin-top: 3em; } }
+      @media screen and (min-width: 1024px) {
+        .flexslider .burning-content .burning-text {
+          margin-top: 5em; }
+          .flexslider .burning-content .burning-text h1 {
+            font-size: 2.5em; }
+          .flexslider .burning-content .burning-text .subtext {
+            font-size: 1.75em; }
+          .flexslider .burning-content .burning-text hr {
+            margin: 1em auto;
+            height: 4px; }
+          .flexslider .burning-content .burning-text p {
+            font-size: 1.2em; }
+          .flexslider .burning-content .burning-text .button {
+            width: 40%; } }
     .flexslider .burning-content .actions {
       margin-top: 1em; }
       .flexslider .burning-content .actions a {
@@ -719,6 +760,19 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
     margin-bottom: 1.5em; }
   .find-event .find {
     margin-bottom: 0; }
+  @media screen and (min-width: 1024px) {
+    .find-event .find {
+      margin-left: 10px;
+      float: right; }
+    .find-event .text-box {
+      width: 25%;
+      float: left;
+      margin-right: 25px;
+      text-align: left; }
+      .find-event .text-box input, .find-event .text-box select {
+        text-align: left;
+        padding-left: 15px;
+        margin-bottom: 0; } }
 
 .upcoming-title {
   background: #e74c3c;
@@ -739,7 +793,7 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
       margin-right: 2em; }
       .event:nth-child(2) {
         margin-right: 0; } }
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 768px) {
     .event {
       width: 30.9%; }
       .event:nth-child(2) {
@@ -865,6 +919,9 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
   @media screen and (min-width: 1024px) {
     .newsletter .small-container {
       width: 80%; } }
+  @media screen and (min-width: 1100px) {
+    .newsletter .small-container {
+      width: 70%; } }
   .newsletter input {
     margin-bottom: 0.5em;
     margin-top: 0.5em; }
@@ -872,14 +929,16 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
       .newsletter input {
         float: left;
         width: 65%; } }
-  @media screen and (min-width: 1024px) {
-    .newsletter input[type="text"] {
-      float: initial;
-      width: 65%; } }
+    @media screen and (min-width: 1024px) {
+      .newsletter input[type="email"] {
+        float: initial;
+        text-align: left;
+        padding-left: 15px; } }
   @media screen and (min-width: 700px) {
     .newsletter input[type="submit"] {
       float: right;
-      width: 140px; } }
+      width: 140px;
+      text-align: center; } }
   .newsletter p {
     margin: 0 0 0.25em;
     color: #fff;
