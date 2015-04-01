@@ -30,7 +30,7 @@
 			}
 		}
 
-		@media screen and (min-width: 1024px) {
+		@media screen and (min-width: 960px) {
 			width: 19.7%;
 			&:last-child {
 				width: 19.8%;
@@ -42,13 +42,13 @@
 			font-weight: $bold;
 			text-transform: uppercase;
 			font-family: $main-font;
-			@media screen and (min-width: 1024px) {
+			@media screen and (min-width: 960px) {
 				margin-bottom: 0.5em;
 			}
 		}
 
 		li {
-			@media screen and (min-width: 1024px) {
+			@media screen and (min-width: 960px) {
 				line-height: 2;
 			}
 		}
@@ -72,7 +72,7 @@
 
 	.social {
 		padding: 0;
-		@media screen and (min-width: 1024px) {
+		@media screen and (min-width: 960px) {
 			float: right;
 		}
 	}
@@ -82,7 +82,7 @@
 		font-size: 0.75em;
 		margin: 0;
 		padding-bottom: 1.5em;
-		@media screen and (min-width: 1024px) {
+		@media screen and (min-width: 960px) {
 			float: left;
 			padding: 0.9em;
 		}

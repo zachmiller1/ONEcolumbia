@@ -13,9 +13,9 @@
 // Banners
 
 .banner {
-	padding: 0.325em 0 0.75em;
+	padding: 2em 0;
 	@media screen and (min-width: 550px) {
-		padding: 1em 0;
+		padding: 2em 0;
 	}
 
 	text-align: center;
@@ -52,7 +52,7 @@
 	width: 140px;
 	border: none;
 	border-radius: 3px;
-	padding: 0.5em 0;
+	padding: 0.825em 0;
 	color: $black;
 	border-bottom: 2px solid darken($grey, 5%);
 	@media screen and (min-width: 450px) {
@@ -86,7 +86,7 @@
 		border-bottom: 2px solid darken($grey, 20%);
 	}
 	@media screen and (min-width: 550px) {
-		width: 47%;
+		width: 40%;
 	}
 }
 
@@ -100,7 +100,7 @@
 		border-bottom: 2px solid darken( $orange, 10%);
 	}
 	@media screen and (min-width: 550px) {
-		width: 47%;
+		width: 40%;
 	}
 }
 
@@ -147,6 +147,10 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
 
 	@media screen and (min-width: 550px) {
 		width: 90%;
+	}
+
+	@media screen and (min-width: 960px) {
+		max-width: 960px;
 	}
 }
 

@@ -8,6 +8,12 @@ body {
 	line-height: 1.5;
 }
 
+p {
+	@media screen and (min-width: 700px) {
+		margin: 2em 0;
+	}
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: $main-font;
 	color: $white;
@@ -20,12 +26,16 @@ h1 {
 }
 
 h2 {
-	font-size: 1.75em;
+	font-size: 2em;
 	margin-bottom: 0.5em;
 }
 
 h3, h4 {
 	font-size: 1.125em;
+
+	@media screen and (min-width: 700px) {
+		font-size: 1.5em;
+	}
 }
 
 h4 {
@@ -33,7 +43,7 @@ h4 {
 }
 
 h5 {
-	font-size: 1.875em;
+	font-size: 2.5em;
 	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 	-webkit-text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 	-moz-text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);

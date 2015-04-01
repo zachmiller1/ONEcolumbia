@@ -8,8 +8,8 @@
 }
 
 .upcoming {
-
-
+	padding: 4em 0;
+	
 	.container {
 		width: 90%;
 	}
@@ -20,8 +20,12 @@
 .event {
 	background: $cream;
 	text-align: center;
-	margin-top: 2em;
+	margin-bottom: 4em;
 	position: relative;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 
 	@media screen and (min-width: 768px) {
 		float: left;
@@ -33,20 +37,18 @@
 		}
 	}
 
-	@media screen and (min-width: 768px) {
-		width: 30.9%;
-		
+	@media screen and (min-width: 960px) {
+		float: left;
+		width: 31.1%;
+		margin-bottom: 0;
+
 		&:nth-child(2) {
 			margin-right: 2em;
 		}
 
 		&:last-child {
 			margin-right: 0;
-		} 
-	}
-
-	&:last-child {
-		margin-bottom: 2em;
+		}
 	}
 
 	.date-bg {

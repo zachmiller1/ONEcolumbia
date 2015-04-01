@@ -360,6 +360,9 @@ th {
 .social {
   padding: 0.625em 0;
   margin: 0; }
+  @media screen and (min-width: 960px) {
+    .social {
+      margin-top: 5px; } }
   .social li {
     display: inline-block; }
   .social a {
@@ -416,6 +419,10 @@ body {
   font-family: "Lato", sans-serif;
   line-height: 1.5; }
 
+@media screen and (min-width: 700px) {
+  p {
+    margin: 2em 0; } }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
   color: #fff;
@@ -426,17 +433,20 @@ h1 {
   font-size: 2.125em; }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 2em;
   margin-bottom: 0.5em; }
 
 h3, h4 {
   font-size: 1.125em; }
+  @media screen and (min-width: 700px) {
+    h3, h4 {
+      font-size: 1.5em; } }
 
 h4 {
   color: #222; }
 
 h5 {
-  font-size: 1.875em;
+  font-size: 2.5em;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   -webkit-text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   -moz-text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
@@ -465,11 +475,11 @@ input {
     margin: 0 auto; } }
 
 .banner {
-  padding: 0.325em 0 0.75em;
+  padding: 2em 0;
   text-align: center; }
   @media screen and (min-width: 550px) {
     .banner {
-      padding: 1em 0; } }
+      padding: 2em 0; } }
   @media screen and (min-width: 550px) {
     .banner h2 {
       float: left;
@@ -493,7 +503,7 @@ input {
   width: 140px;
   border: none;
   border-radius: 3px;
-  padding: 0.5em 0;
+  padding: 0.825em 0;
   color: #222;
   border-bottom: 2px solid #9d9d9d; }
   @media screen and (min-width: 450px) {
@@ -522,7 +532,7 @@ input {
     border-bottom: 2px solid #777777; }
   @media screen and (min-width: 550px) {
     .secondary {
-      width: 47%; } }
+      width: 40%; } }
 
 .buy {
   color: #fff;
@@ -534,7 +544,7 @@ input {
     border-bottom: 2px solid #e18a0e; }
   @media screen and (min-width: 550px) {
     .buy {
-      width: 47%; } }
+      width: 40%; } }
 
 input[type="text"], input[type="email"], input[type="date"], input[type="search"], select {
   box-sizing: border-box;
@@ -561,6 +571,9 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
   @media screen and (min-width: 550px) {
     .container {
       width: 90%; } }
+  @media screen and (min-width: 960px) {
+    .container {
+      max-width: 960px; } }
 
 .top-bar {
   background: #3498db;
@@ -570,7 +583,7 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
       width: 100%; } }
   .top-bar .social {
     text-align: center; }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 960px) {
       .top-bar .social {
         float: left; } }
   .top-bar .accounts {
@@ -590,24 +603,33 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
       .top-bar .accounts a:hover {
         color: #fff;
         background: #34495e; }
-    @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 700px) {
+        .top-bar .accounts a {
+          font-size: 1.25em;
+          padding: 0.75em 0; } }
+    @media screen and (min-width: 960px) {
       .top-bar .accounts {
         float: right;
         background: #3498db;
-        display: block; }
+        display: block;
+        margin-top: 1em; }
         .top-bar .accounts li {
           display: inline; }
         .top-bar .accounts a {
           display: inline-block;
           padding: 0 0 0 20px;
-          text-align: right; } }
+          text-align: right;
+          width: auto; }
+          .top-bar .accounts a:hover {
+            background: #3498db;
+            color: #fff; } }
 
 .main-header {
   background: #ecf0f1; }
   @media screen and (min-width: 550px) {
     .main-header .container {
       width: 100%; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 960px) {
     .main-header .container {
       max-width: 960px; } }
   .main-header .logo-replace {
@@ -624,15 +646,18 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
       .main-header .logo-replace {
         height: 150px;
         width: 240px; } }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 960px) {
       .main-header .logo-replace {
         float: left; } }
-  @media screen and (min-width: 450px) {
-    .main-header .main-nav .menu {
-      font-size: 1.5em; } }
-  @media screen and (min-width: 1024px) {
-    .main-header .main-nav .menu {
-      display: none; } }
+  .main-header .main-nav .menu {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase; }
+    @media screen and (min-width: 450px) {
+      .main-header .main-nav .menu {
+        font-size: 1.5em; } }
+    @media screen and (min-width: 960px) {
+      .main-header .main-nav .menu {
+        display: none; } }
   .main-header .main-nav a {
     display: block;
     text-align: center;
@@ -644,7 +669,7 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
       background: #34495e; }
   .main-header .main-nav .regular-nav {
     display: none; }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 960px) {
       .main-header .main-nav .regular-nav {
         display: block;
         float: right;
@@ -665,10 +690,7 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
   .flexslider li {
     background: url("../img/burning-columbia-slide.jpg") no-repeat;
     background-size: cover;
-    padding: 1em; }
-    @media screen and (min-width: 700px) {
-      .flexslider li {
-        padding: 1em 1.5em; } }
+    padding: 3em 1em; }
   .flexslider .burning-content {
     line-height: 1;
     text-align: center; }
@@ -677,13 +699,13 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
         width: 90%;
         margin: 0 auto; } }
     .flexslider .burning-content h1 {
-      font-size: 1.5em;
+      font-size: 2.5em;
       margin-bottom: 0.25em; }
       @media screen and (min-width: 700px) {
         .flexslider .burning-content h1 {
-          font-size: 2em; } }
+          font-size: 3em; } }
     .flexslider .burning-content .subtext {
-      font-size: 1em;
+      font-size: 1.25em;
       font-weight: italic;
       color: #fff;
       margin: 0 0 0; }
@@ -692,13 +714,13 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
           font-size: 1.325em; } }
     .flexslider .burning-content p {
       color: #fff;
-      font-size: 0.875em;
+      font-size: 1em;
       line-height: 1;
       margin: 0 0.5em 0.5em;
       display: inline-block; }
       @media screen and (min-width: 700px) {
         .flexslider .burning-content p {
-          font-size: 1em; } }
+          font-size: 1.25em; } }
     .flexslider .burning-content .italic {
       font-weight: italic; }
     .flexslider .burning-content hr {
@@ -711,14 +733,15 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
         .flexslider .burning-content hr {
           margin: 0.625em auto; } }
     .flexslider .burning-content img {
-      width: 70%; }
+      width: 100%;
+      max-width: 400px; }
       @media screen and (min-width: 550px) {
         .flexslider .burning-content img {
-          width: 40%;
+          width: 50%;
           float: left; } }
       @media screen and (min-width: 700px) {
         .flexslider .burning-content img {
-          width: 45%; } }
+          width: 50%; } }
     .flexslider .burning-content .burning-text {
       width: 100%;
       margin: 1.25em auto 0; }
@@ -726,21 +749,25 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
         .flexslider .burning-content .burning-text {
           width: 50%;
           float: right;
-          margin-top: 3em; } }
-      @media screen and (min-width: 1024px) {
+          margin-top: 1.5em; } }
+      @media screen and (min-width: 700px) {
         .flexslider .burning-content .burning-text {
-          margin-top: 5em; }
+          margin-top: 2em; } }
+      @media screen and (min-width: 960px) {
+        .flexslider .burning-content .burning-text {
+          margin-top: 3em; }
           .flexslider .burning-content .burning-text h1 {
-            font-size: 2.5em; }
+            font-size: 4em; }
           .flexslider .burning-content .burning-text .subtext {
-            font-size: 1.75em; }
+            font-size: 1.625em; }
           .flexslider .burning-content .burning-text hr {
             margin: 1em auto;
             height: 4px; }
           .flexslider .burning-content .burning-text p {
-            font-size: 1.2em; }
+            font-size: 1.5em; }
           .flexslider .burning-content .burning-text .button {
-            width: 40%; } }
+            width: 35%;
+            font-size: 1.125em; } }
     .flexslider .burning-content .actions {
       margin-top: 1em; }
       .flexslider .burning-content .actions a {
@@ -755,12 +782,30 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
 .find-event {
   background: #ecf0f1;
   text-align: center;
-  padding: 1.5em 0; }
+  padding: 2.5em 0; }
   .find-event input, .find-event select {
     margin-bottom: 1.5em; }
+    @media screen and (min-width: 700px) {
+      .find-event input, .find-event select {
+        padding: 1.75em 0;
+        font-size: 16px; } }
+    @media screen and (min-width: 700px) {
+      .find-event input, .find-event select {
+        padding: 1.4em 0; } }
+  @media screen and (min-width: 700px) {
+    .find-event input[type="submit"] {
+      font-size: 0.875em;
+      padding: 0.875em 0; } }
+  .find-event input[type="date"] {
+    padding-left: 3.75em; }
+  .find-event select {
+    padding-left: 8em; }
+    @media screen and (min-width: 550px) {
+      .find-event select {
+        padding-left: 13.8em; } }
   .find-event .find {
     margin-bottom: 0; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 960px) {
     .find-event .find {
       margin-left: 10px;
       float: right; }
@@ -778,14 +823,18 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
   background: #e74c3c;
   text-align: center; }
 
-.upcoming .container {
-  width: 90%; }
+.upcoming {
+  padding: 4em 0; }
+  .upcoming .container {
+    width: 90%; }
 
 .event {
   background: #ecf0f1;
   text-align: center;
-  margin-top: 2em;
+  margin-bottom: 4em;
   position: relative; }
+  .event:last-child {
+    margin-bottom: 0; }
   @media screen and (min-width: 768px) {
     .event {
       float: left;
@@ -793,15 +842,15 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
       margin-right: 2em; }
       .event:nth-child(2) {
         margin-right: 0; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 960px) {
     .event {
-      width: 30.9%; }
+      float: left;
+      width: 31.1%;
+      margin-bottom: 0; }
       .event:nth-child(2) {
         margin-right: 2em; }
       .event:last-child {
         margin-right: 0; } }
-  .event:last-child {
-    margin-bottom: 2em; }
   .event .date-bg {
     display: inline-block;
     text-align: center;
@@ -838,20 +887,24 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
     background: #e74c3c; }
 
 .categories {
-  padding: 2em 0; }
+  padding: 4em 0; }
   .categories .container {
     width: 100%; }
   @media screen and (min-width: 550px) {
     .categories .container {
-      width: 90%; } }
+      width: 100%; } }
   .categories .category {
-    width: 50%;
+    width: 100%;
     float: left;
     text-align: center;
     padding: 3em 1em;
     text-transform: uppercase;
     font-size: 0.75em; }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 700px) {
+      .categories .category {
+        padding: 4em 0;
+        width: 50%; } }
+    @media screen and (min-width: 960px) {
       .categories .category {
         width: 25%;
         padding: 4em 1em; } }
@@ -907,21 +960,19 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
 .newsletter {
   background: #1abc9c;
   text-align: center;
-  padding: 1em 0; }
-  @media screen and (min-width: 1024px) {
+  padding: 3em 0; }
+  @media screen and (min-width: 960px) {
     .newsletter form {
-      width: 60%;
-      float: right; } }
+      width: 51%;
+      float: right;
+      padding: 0.625em 0; } }
   @media screen and (min-width: 700px) {
     .newsletter .small-container {
       width: 70%;
       margin: 0 auto; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 960px) {
     .newsletter .small-container {
       width: 80%; } }
-  @media screen and (min-width: 1100px) {
-    .newsletter .small-container {
-      width: 70%; } }
   .newsletter input {
     margin-bottom: 0.5em;
     margin-top: 0.5em; }
@@ -929,7 +980,7 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
       .newsletter input {
         float: left;
         width: 65%; } }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 960px) {
       .newsletter input[type="email"] {
         float: initial;
         text-align: left;
@@ -939,13 +990,25 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
       float: right;
       width: 140px;
       text-align: center; } }
+  @media screen and (min-width: 768px) {
+    .newsletter input[type="submit"] {
+      float: left;
+      width: 140px;
+      margin-left: 1em;
+      text-align: center; } }
+  @media screen and (min-width: 768px) {
+    .newsletter input[type="submit"] {
+      float: right; } }
   .newsletter p {
     margin: 0 0 0.25em;
     color: #fff;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     font-size: 1.5em; }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 550px) {
+      .newsletter p {
+        font-size: 2em; } }
+    @media screen and (min-width: 960px) {
       .newsletter p {
         margin: 0.4em 0 0.5em;
         float: left; } }
@@ -970,7 +1033,7 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
         width: 33%; }
         .main-footer .footer-nav:last-child {
           width: 33%; } }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 960px) {
       .main-footer .footer-nav {
         width: 19.7%; }
         .main-footer .footer-nav:last-child {
@@ -980,10 +1043,10 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
       font-weight: 700;
       text-transform: uppercase;
       font-family: "Oswald", sans-serif; }
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 960px) {
         .main-footer .footer-nav p {
           margin-bottom: 0.5em; } }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 960px) {
       .main-footer .footer-nav li {
         line-height: 2; } }
     .main-footer .footer-nav a {
@@ -1000,7 +1063,7 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
   padding: 1em 0; }
   .footer-bottom .social {
     padding: 0; }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 960px) {
       .footer-bottom .social {
         float: right; } }
   .footer-bottom p {
@@ -1008,7 +1071,7 @@ input[type="text"], input[type="email"], input[type="date"], input[type="search"
     font-size: 0.75em;
     margin: 0;
     padding-bottom: 1.5em; }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 960px) {
       .footer-bottom p {
         float: left;
         padding: 0.9em; } }
